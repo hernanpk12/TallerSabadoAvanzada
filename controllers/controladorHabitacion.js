@@ -5,7 +5,7 @@ const {insertarHabitacion} = require('../services/ServicioHabitacion.js')
 const {leerHabitacion}= require('../services/ServicioHabitacion.js')
 const {leerHabitaciones}= require('../services/ServicioHabitacion.js')
 const {editarHabitaciones}= require('../services/ServicioHabitacion.js')
-const {eliminarHabitacion}= require('../services/ServicioHabitacion.js')
+const {eliminarhabitacion}= require('../services/ServicioHabitacion.js')
 
 
 async function registrarHabitacion(peticion=request,respuesta=response){
@@ -75,7 +75,7 @@ async function eliminarHabitaciones(peticion=request,respuesta=response){
   let id = peticion.params.id
 
   try{
-    await eliminarHabitacion(id)
+    await eliminarhabitacion(id)
     respuesta.status(200).json({
         estado:true,
         mensaje:"exito al eliminar"

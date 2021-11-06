@@ -29,12 +29,11 @@ class ServidorModelo{
 
     }
 
-    enrutarPeticionesReservas(){
+    enrutarPeticiones(){
           this.app.use('/',rutasReserva)
+          this.app.use('/',RutasHabitaciones)
     }
-    enrutarPeticionesHabitaciones(){
-        this.app.use('/',RutasHabitaciones)
-  }
+  
 
 
 
