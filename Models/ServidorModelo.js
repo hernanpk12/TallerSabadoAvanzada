@@ -14,8 +14,8 @@ class ServidorModelo{
         this.app = express()
         this.conectarConBD()
         this.llamarAuxiliares()
-        this.enrutarPeticionesReservas()
-        this.enrutarPeticionesHabitaciones()
+        this.enrutarPeticiones()
+        
 
     }
 
